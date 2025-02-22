@@ -2,72 +2,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Услуги компании</title>
+    <title>Наши Услуги</title>
     <style>
         body {
             background-color: #000;
             color: #fff;
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 0;
+            padding: 20px;
         }
         .container {
             max-width: 800px;
-            margin: 50px auto;
+            margin: auto;
+        }
+        .service {
             padding: 20px;
+            border-bottom: 1px solid #444;
         }
-        .slide {
-            display: none;
-        }
-        .active {
-            display: block;
-        }
-        .button {
-            background-color: #fff;
-            color: #000;
-            padding: 10px 20px;
-            margin: 10px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
+        .contact {
+            margin-top: 30px;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Наши услуги</h1>
-        <div class="slide active" id="slide1">
-            <h2>Обзвоны клиентов</h2>
-            <p>Мы предоставляем профессиональные обзвоны для вашего бизнеса.</p>
-        </div>
-        <div class="slide" id="slide2">
-            <h2>Разработка сайтов</h2>
-            <p>Создаём современные и продающие сайты под ключ.</p>
-        </div>
-        <div class="slide" id="slide3">
-            <h2>Реклама и продвижение</h2>
-            <p>Поможем вашему бизнесу привлекать клиентов с помощью рекламы.</p>
-        </div>
-        <button class="button" onclick="prevSlide()">Назад</button>
-        <button class="button" onclick="nextSlide()">Вперёд</button>
-        <br>
-        <a href="https://t.me/katerina_majik" class="button">Заказать услугу</a>
+        <h1>Наши Услуги</h1>
+        <div class="service">Прохождение обзвона на Лидеров / Заместителя</div>
+        <div class="service">Продажа виртуальных денег</div>
+        <div class="service">Продажа Макросы для ПК/КВМ</div>
+        <div class="service">Продажа улучшений для ОПГ/Госс</div>
+        <div class="service">Заполнение заявки для Старшего Состава</div>
+        <div class="service">Продажа рангов</div>
+        <div class="service">Покупка военного билета</div>
+        <div class="contact">Связь со мной: <a href="https://t.me/meyrjan_o8" style="color: #0af;">@meyrjan_o8</a></div>
     </div>
-    <script>
-        let currentSlide = 1;
-        function showSlide(n) {
-            let slides = document.querySelectorAll(".slide");
-            slides.forEach(slide => slide.classList.remove("active"));
-            slides[n - 1].classList.add("active");
-        }
-        function nextSlide() {
-            currentSlide = (currentSlide % 3) + 1;
-            showSlide(currentSlide);
-        }
-        function prevSlide() {
-            currentSlide = (currentSlide - 2 + 3) % 3 + 1;
-            showSlide(currentSlide);
-        }
-    </script>
 </body>
 </html>
