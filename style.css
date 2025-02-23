@@ -1,65 +1,11 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('ps52754-8mistoverthetreetops50x70.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
     text-align: center;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
     color: white;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 3px solid white;
-    animation: bounce 1.5s infinite;
-}
-
-h1 {
-    font-size: 32px;
-    margin: 10px 0;
-}
-
-p {
-    font-size: 18px;
-    opacity: 0.8;
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 15px;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    background: #0078ff;
-    transition: 0.3s;
-}
-
-.social-links a:hover {
-    background: #0056b3;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    background: linear-gradient(to right, black, purple), 
+                url('ps52754-8mistoverthetreetops50x70.jpg') no-repeat center center/cover;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
 }
